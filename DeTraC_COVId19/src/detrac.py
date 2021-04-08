@@ -42,8 +42,7 @@ def training(args):
     batch_size = args.batch_size[0]
     feature_extractor_num_classes = args.num_classes[0]
     feature_composer_num_classes = 2 * feature_extractor_num_classes
-    folds = args.folds[0]
-    epsilon = args.epsilon[0]
+    db = args.db[0]
     minpoints = args.minpoints[0]
     feature_extractor_lr = args.lr[0]
     feature_composer_lr = args.lr[1]
@@ -67,8 +66,7 @@ def training(args):
             initial_dataset_path=INITIAL_DATASET_PATH,
             composed_dataset_path=COMPOSED_DATASET_PATH,
             features_path=EXTRACTED_FEATURES_PATH,
-            epsilon=epsilon,
-            minpoints=minpoints
+            db =db
         )
 
         # Train feature composer on composed dataset
@@ -110,8 +108,7 @@ def training(args):
             initial_dataset_path=INITIAL_DATASET_PATH,
             composed_dataset_path=COMPOSED_DATASET_PATH,
             features_path=EXTRACTED_FEATURES_PATH,
-            epsilon=epsilon,
-            minpoints=minpoints
+            db=db
             
         )
 
