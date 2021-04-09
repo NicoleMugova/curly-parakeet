@@ -65,7 +65,7 @@ def execute_decomposition(
     initial_dataset_path: str, 
     composed_dataset_path: str, 
     features_path: str,
-    f:int
+    fc:int
 ):
     """
     Decomposes features in a separate dataset
@@ -74,7 +74,7 @@ def execute_decomposition(
         <string> initial_dataset_path
         <string> composed_dataset_path
         <string> features_path
-        <int> f: Number of clusters
+        <int> fc: Number of clusters
     """
 
     # Check if folders exist
