@@ -85,7 +85,7 @@ parser.add_argument(
     metavar="K",
     type=int,
     nargs=1,
-    help="K-Means clustering"
+    help="Fuzzy C Means clustering"
 )
 
 # Inference option
