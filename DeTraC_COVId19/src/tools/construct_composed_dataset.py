@@ -37,7 +37,7 @@ def decompose(
     features = np.load(path_to_features)
 
     # Cluster index
-    idx = FCM(n_clusters= fc, random_state=0).fit(features)
+    idx = FCM(n_clusters= fc, random_state=111).fit(features)
     idx = idx.predict(features)
 
     # Images list
